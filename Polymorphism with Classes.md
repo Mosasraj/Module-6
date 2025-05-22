@@ -27,38 +27,24 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 
 ## 💻 Program
 ```
-class Beans:
-    def type(self):
-        print("Vegetable")
-
-    def color(self):
-        print("Green")
-class Mango:
-    def type(self):
-        print("Fruit")
-
-    def color(self):
-        print("Yellow")
-def func(obj):
-    obj.type()
-    obj.color()
-b = Beans()
-m = Mango()
-print("Beans Info:")
-func(b)
-
-print("\nMango Info:")
-func(m)
+class Beans(): 
+     def type(self): 
+       print("Vegetable") 
+     def color(self):
+       print("Green") 
+class Mango(): 
+     def type(self): 
+       print("Fruit") 
+     def color(self): 
+       print("Yellow")
+obj_beans = Beans() 
+obj_mango = Mango()
+for func in (obj_beans,obj_mango): 
+    func.type()
+    func.color()
 ```
 ## Output
-```
-Beans Info:
-Vegetable
-Green
+![image](https://github.com/user-attachments/assets/55c34645-fd9d-4ae0-a032-773a620bf0d0)
 
-Mango Info:
-Fruit
-Yellow
-```
 ## Result
 Thus the given program is verified and executed sucessfully
